@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<script>
+
+    var dinner = parseInt(prompt("Tapez le montant du dinner:"));
+    var pourboire = parseInt(prompt("Tapez le montant du pourboire entre 10% 15% 20%")); 
+
+
+    function calculerPourbois() {
+        
+
+
+
+    }
+
+    if(pourboire <= 20) {
+        var pourboire = dinner * pourboire;
+        var taxes = dinner * 0.15;   
+        var totalApayer = dinner + pourboire + taxes;
+
+        alert("Montant du dinner " + dinner.toFixed(2) + " $");
+        alert("Montant du pourboire " + pourboire.toFixed(2) + " $");
+        alert("Montant des taxes " + taxes.toFixed(2) + " $");
+        alert("Montant a payer " + totalApayer.toFixed(2) + " $");
+    }else {
+        alert("Montant incorrect, veuillez réessayer SVP");
+    }   
+
+</script>
